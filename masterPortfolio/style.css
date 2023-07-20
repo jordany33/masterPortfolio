@@ -1,0 +1,28 @@
+.top_nav
+{
+    background: transparent;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top_nav a 
+{
+    float: right;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 10px;
+    margin: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+  
+.top_nav a:hover { color: #20C20E; /* hecker green */ }
+
+html, body { background-color: #254377; }
+
+
+/*Needs to be adjusted. Nav bar will not show if screen width is < 600px*/
+@media only screen and ( max-width: 600px )
+{
+    .top_nav { display: none ;}
+}
