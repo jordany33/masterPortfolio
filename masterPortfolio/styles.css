@@ -35,9 +35,13 @@ header {
 
 .logo-nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
 }
 
 .title {
@@ -81,14 +85,24 @@ footer {
   font-size: 2em;
 }
 
-nav ul {
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left ul, .nav-right ul {
+  display: flex;
   list-style-type: none;
   padding: 0;
 }
 
-nav ul li {
-  display: inline;
+.nav-left ul li, .nav-right ul li {
   margin-right: 10px;
+}
+
+.nav-right ul li:last-child {
+  margin-right: 0;
 }
 
 nav ul li a {
@@ -111,4 +125,3 @@ nav ul li a:hover {
 @keyframes blink {
   50% { opacity: 0; } /* At 50% of the time (0.5s), be fully transparent */
 }
-
