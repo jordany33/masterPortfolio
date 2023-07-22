@@ -3,10 +3,11 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-color: #20222e;
+  color: #fff;
 }
 
 header {
-  background-color: #333;
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -14,7 +15,6 @@ header {
 
 main {
   padding: 20px;
-  background-color: #f1f1f1;
 }
 
 section {
@@ -26,7 +26,6 @@ article {
 }
 
 footer {
-  background-color: #333;
   color: #fff;
   text-align: center;
   padding: 10px 0;
