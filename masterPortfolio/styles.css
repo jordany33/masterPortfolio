@@ -25,35 +25,31 @@ body {
   line-height: 1.6;
   background-color: #20222e;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Sets the height of the body to the viewport height */
 }
 
 header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px 50px;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .logo-nav {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  padding: 10px 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  text-align: center;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex: 1; /* Takes up the remaining space in the body */
+  padding: 20px;
 }
 
 section {
@@ -77,17 +73,13 @@ footer {
 }
 
 #logo {
+  padding-right: 20px;
   font-size: 2em;
-  line-height: 1;
-  margin-right: 20px;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
 }
 
 nav ul li {
@@ -98,4 +90,8 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ddd; /* Change color to your liking */
 }
