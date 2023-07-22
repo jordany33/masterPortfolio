@@ -42,10 +42,14 @@ header {
 
 .title {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
-  text-align: center;
+  min-height: 75vh;
+}
+
+.title h1 {
+  margin: 0.01em 0;
 }
 
 main {
@@ -95,3 +99,16 @@ nav ul li a {
 nav ul li a:hover {
   color: #ddd; /* Change color to your liking */
 }
+
+.typing::after {
+  content: '|'; /* The character to display - usually a vertical line */
+  margin-left: 2px; /* A little space after the word */
+  opacity: 1; /* Start fully visible */
+  animation: blink 1s infinite; /* Animate over one second, repeat forever */
+}
+
+/* The animation: */
+@keyframes blink {
+  50% { opacity: 0; } /* At 50% of the time (0.5s), be fully transparent */
+}
+
