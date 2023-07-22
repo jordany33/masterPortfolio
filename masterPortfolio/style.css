@@ -1,28 +1,22 @@
-.top_nav
-{
-    background: transparent;
+body {
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    font-family: 'Roboto', sans-serif;
-}
-
-.top_nav a 
-{
-    float: right;
-    color: #f2f2f2;
-    text-align: right;
-    padding: 10px;
-    margin: 12px;
-    text-decoration: none;
-    font-size: 15px;
-}
+    background-color: #222; /* Fallback color */
+    background-image: linear-gradient(45deg, #ff00ff, #00ffff, #ff0000, #00ff00);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
   
-.top_nav a:hover { color: #20C20E; /* hecker green */ }
-
-html, body { background-color: #254377; }
-
-
-/*Needs to be adjusted. Nav bar will not show if screen width is < 600px*/
-@media only screen and ( max-width: 600px )
-{
-    .top_nav { display: none ;}
-}
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
