@@ -3,29 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Portfolio</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <title>John Doe's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="logo-nav">
+      <div id="logo">
+        JY
+      </div>
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul class="contact-links">
+            <li><a href="mailto:johndoe@example.com">Email</a></li>
+            <li><a href="https://linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/your-github-username" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <section id="home">
-    <h1>Welcome to Your Portfolio</h1>
-    <p>Introduce yourself and highlight your skills here.</p>
-  </section>
+  <main>
+    <div class="title">
+      <h1>Hey, my name is Jordan Yee</h1>
+      <h1>I like to <span class="typing"></span></h1>
+      <p>As a skilled and accomplished software engineer with a wealth of experience in both front-end and back-end technologies, <br>
+        I have been actively involved in developing and deploying innovative solutions for a diverse range of projects. 
+        My expertise <br> spans across a multitude of cutting-edge tools and frameworks, including but not limited to React, Node.js, Python, and SQL.
+      </p>
 
+    </div>
+<!--
     <section id="about">
       <h2>About Me</h2>
       <p>I'm a software engineer with experience in front-end and back-end technologies including React, Node.js, Python, and SQL. I have a passion for solving complex problems and building scalable web applications.</p>
+    </section> // Include this into the title   
+-->
+
+  <div class="center" style="text-align: center;">
+    <section id="experience">
+      <h3>> Experience</h3>
+      <ul>
+        <li>Testswe</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+      </ul>
+    </section>
+    
+    <section id="education">
+      <h2>Education</h2>
     </section>
 
     <section id="projects">
@@ -46,10 +84,16 @@
       <!-- Add more projects as needed -->
     </section>
 
+    <section id="skills">
+      <h2>Skills</h2>
+    </section>
+
     <section id="contact">
       <h2>Contact Me</h2>
       <p>You can reach me at johndoe@example.com</p>
     </section>
+  </div>
+
   </main>
 
   <footer>
