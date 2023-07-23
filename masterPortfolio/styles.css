@@ -1,8 +1,7 @@
-/* For Firefox */
 html {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 238, 0, 0.7) rgba(0, 0, 0, 0.5);
-  scroll-behavior: smooth; /*I think it gives the person a better feeling*/
+  scroll-behavior: smooth;
 }
 
 /* For Chrome, Edge, and Safari */
@@ -15,7 +14,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ffd900dc;
+  background-color: rgba(255, 217, 0, 0.863);
   border-radius: 20px;
 }
 
@@ -24,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #232628;/* kkew */
+  background-color: #20222e;
   color: #fff;
 }
 
@@ -36,16 +35,21 @@ header {
 
 .logo-nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
+  padding-left: 15%;
   min-height: 75vh;
 }
 
@@ -82,23 +86,33 @@ footer {
   font-size: 2em;
 }
 
-nav ul {
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left ul, .nav-right ul {
+  display: flex;
   list-style-type: none;
   padding: 0;
 }
 
-nav ul li {
-  display: inline;
+.nav-left ul li, .nav-right ul li {
   margin-right: 10px;
 }
 
+.nav-right ul li:last-child {
+  margin-right: 0;
+}
+
 nav ul li a {
-  color: #ffd900dc;
+  color: #ffd900e1;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: #ddd; /* Change color to your liking */
+  color: #ffd90094; /* Change color to your liking */
 }
 
 .typing::after {
@@ -113,3 +127,18 @@ nav ul li a:hover {
   50% { opacity: 0; } /* At 50% of the time (0.5s), be fully transparent */
 }
 
+#experience
+{
+}
+
+#education
+{
+}
+
+#projects
+{
+}
+
+#Skills
+{
+}
