@@ -5,96 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John Doe's Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Remove inline styles here -->
 </head>
 <body>
   <header>
-    <div class="logo-nav">
-      <div id="logo">
-        JY
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">JY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <div class="nav-left">
-          <ul>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#resume">Resume</a></li>
-          </ul>
-        </div>
-        <div class="nav-right">
-          <ul class="contact-links">
-            <li><a href="mailto:johndoe@example.com">Email</a></li>
-            <li><a href="https://linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/your-github-username" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    </nav>
   </header>
+  
+  <div class="container">
+    <main>
+      <div class="title">
+        <h7>Hi, my name is</h7>
+        <h1>Jordan Yee.</h1>
+        <h1>I like <span class="typing"></span></h1>
+      </div>
 
-  <main>
-    <div class="title">
-      <h1>Hey, my name is Jordan Yee</h1>
-      <h1>I like to <span class="typing"></span></h1>
-      <p>As a skilled and accomplished software engineer with a wealth of experience in both front-end and back-end technologies, <br>
-        I have been actively involved in developing and deploying innovative solutions for a diverse range of projects. 
-        My expertise <br> spans across a multitude of cutting-edge tools and frameworks, including but not limited to React, Node.js, Python, and SQL.
-      </p>
+      <section id="about">
+        <h2>About Me <hr></h2>
+        <p>I'm a software engineer with experience in front-end and back-end technologies including React, Node.js, Python, and SQL. I have a passion for solving complex problems and building scalable web applications.</p>
+      </section>
 
-    </div>
-    
-  <div class="center" style="text-align: center;">
-    <section id="experience">
-      <h3>> Experience</h3>
-      <ul>
-        <li>Testswe</li>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-      </ul>
-    </section>
-    
-    <section id="education">
-      <h2>Education</h2>
-    </section>
+      <section id="experience">
+        <h2>Experience</h2>
+        <!-- Add your experience content here -->
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+      <section id="projects">
+        <h2>Projects</h2>
       
-      <article>
-        <h3>Project 1</h3>
-        <p>Description of Project 1.</p>
-        <a href="https://github.com/username/project1" target="_blank">See on GitHub</a>
-      </article>
+        <article>
+          <h3>Project 1</h3>
+          <p>Description of Project 1.</p>
+          <a href="https://github.com/username/project1" target="_blank">See on GitHub</a>
+        </article>
 
-      <article>
-        <h3>Project 2</h3>
-        <p>Description of Project 2.</p>
-        <a href="https://github.com/username/project2" target="_blank">See on GitHub</a>
-      </article>
+        <article>
+          <h3>Project 2</h3>
+          <p>Description of Project 2.</p>
+          <a href="https://github.com/username/project2" target="_blank">See on GitHub</a>
+        </article>
 
-      <!-- Add more projects as needed -->
-    </section>
+        <!-- Add more projects as needed -->
+      </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-    </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <!-- Add your skills content here -->
+      </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>You can reach me at johndoe@example.com</p>
-    </section>
+      <section id="resume">
+        <h2>Resume</h2>
+        <!-- Add your resume content here -->
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at johndoe@example.com</p>
+      </section>
+    </main>
   </div>
 
-  </main>
-
   <footer>
-    <p>&copy; 2023 John Doe</p>
+    <p>Designed & Built by Jordan Yee</p>
   </footer>
 
   <!-- JavaScript link -->
   <script src="script.js"></script>
+  <!-- Add Bootstrap JS link -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
