@@ -139,3 +139,43 @@ footer {
 .navbar-toggler-icon {
   background-color: #fff;
 }
+
+/* Make the navbar transparent */
+.navbar {
+  background-color: transparent;
+}
+
+/* Remove background color and border from the navbar links */
+.navbar-nav .nav-link {
+  background-color: transparent;
+  border: none;
+}
+
+/* Add custom CSS to make the navbar transparent and text white */
+.navbar {
+  background-color: transparent !important;
+}
+.navbar-brand {
+  color: #fff !important; /* Set the color of the brand (JY) to white */
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+/* Set the container to take full width of the viewport */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Fix the alignment of the JY logo on small screens */
+@media (max-width: 767px) {
+  .navbar-brand {
+    margin-right: auto;
+  }
+}
+
+/* Change the dropdown menu icon to white */
+.navbar-toggler-icon {
+  background-color: #fff;
+}
