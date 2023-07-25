@@ -1,29 +1,11 @@
-/* For Firefox */
-html {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 238, 0, 0.7) rgba(0, 0, 0, 0.5);
-}
-
-/* For Chrome, Edge, and Safari */
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 217, 0, 0.863);
-  border-radius: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Inter Tight', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #20222e;
+  background-color: #0f172a;
   color: #fff;
 }
 
@@ -33,31 +15,98 @@ header {
   text-align: center;
 }
 
-.logo-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+/* Hide the logo on small screens when the menu is open */
+.navbar-collapse.show #logo {
+  display: none;
 }
 
-.nav-left, .nav-right {
+/* Center the logo for small screens */
+.navbar-brand {
+  margin: 0 auto;
+}
+
+/* Center the navigation links for small screens */
+.navbar-nav.ml-auto {
+  text-align: center;
+}
+
+.container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 75vh;
+  text-align: left;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
-.title h1 {
-  margin: 0.01em 0;
+#about 
+{
+  padding: 20px;
+}
+
+#experience 
+{
+  padding: 20px;
+}
+
+#projects 
+{
+  padding: 20px;
+  margin: 40px
+}
+
+#skills 
+{
+  padding: 20px;
+}
+
+#resume 
+{
+  padding: 20px;
+}
+
+#contact 
+{
+  padding: 20px;
+}
+
+.typing
+{
+  text-align: left;
+}
+
+/* Set the styles for h1 and h2 elements */
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 88px;
+  color: #ccd6f6; /* Color for "Jordan Yee" */
+}
+
+h7 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #64ffda;
+}
+
+.title h1 span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 72px;
+  color: #8892b0; /* Color for "I like..." */
 }
 
 main {
   padding: 20px;
+  flex-grow: 1;
 }
 
 section {
@@ -74,54 +123,50 @@ footer {
   padding: 10px 0;
 }
 
-.ball {
-  position: absolute;
-  border-radius: 100%;
-  opacity: 0.7;
+.typing {
+  display: inline;
 }
 
-#logo {
-  padding-right: 20px;
-  font-size: 2em;
-}
-
-nav {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-left ul, .nav-right ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-}
-
-.nav-left ul li, .nav-right ul li {
-  margin-right: 10px;
-}
-
-.nav-right ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: #ddd; /* Change color to your liking */
-}
-
-.typing::after {
-  content: '|'; /* The character to display - usually a vertical line */
-  margin-left: 2px; /* A little space after the word */
-  opacity: 1; /* Start fully visible */
-  animation: blink 1s infinite; /* Animate over one second, repeat forever */
-}
-
-/* The animation: */
 @keyframes blink {
-  50% { opacity: 0; } /* At 50% of the time (0.5s), be fully transparent */
+  50% { opacity: 0; }
+}
+
+/* Make the navbar transparent */
+.navbar {
+  background-color: transparent;
+}
+
+/* Remove background color and border from the navbar links */
+.navbar-nav .nav-link {
+  background-color: transparent;
+  border: none;
+}
+
+/* Add custom CSS to make the navbar transparent and text white */
+.navbar {
+  background-color: transparent !important;
+}
+.navbar-brand {
+  color: #fff !important; /* Set the color of the brand (JY) to white */
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+/* Set the container to take full width of the viewport */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Fix the alignment of the JY logo on small screens */
+@media (max-width: 767px) {
+  .navbar-brand {
+    margin-right: auto;
+  }
+}
+
+/* Change the dropdown menu icon to white */
+.navbar-toggler-icon {
+  background-color: #fff;
 }
