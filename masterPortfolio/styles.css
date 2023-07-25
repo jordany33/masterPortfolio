@@ -128,8 +128,19 @@ footer {
 }
 
 @keyframes blink {
+  0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+.typing::after {
+  content: ' ';
+  display: inline;
+  margin-left: 0;
+  border-right: .2ch solid;
+  transform: translateY(-.15em);
+  animation: blink 1s steps(1) infinite;
+}
+
 
 /* Make the navbar transparent */
 .navbar {
@@ -170,3 +181,4 @@ footer {
 .navbar-toggler-icon {
   background-color: #fff;
 }
+
