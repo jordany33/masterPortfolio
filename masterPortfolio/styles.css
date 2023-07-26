@@ -50,7 +50,7 @@ header {
 
 #about 
 {
-  padding-top: 33%;
+  margin-top: 200px;
 }
 
 #experience 
@@ -77,11 +77,12 @@ header {
 .btn.resume-button {
   color: #00FFC5;
   border-color: #00FFC5;
+  transition: transform 0.5s, box-shadow 0.5s; /* Add this line */
 }
 
 .btn.resume-button:hover {
-  background-color: #00FFC5;
-  color: #fff;
+  transform: translateY(-5px) scale(1.05); /* New transform effect on hover */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5); /* New box shadow effect on hover */
 }
 
 .nav-item a[href="#resume"] {
@@ -102,6 +103,10 @@ header {
 
 .nav-item a[href="#resume"]:hover {
   color: #fff !important;
+}
+
+.nav-item {
+  margin-right: 20px; /* adjust this value as needed */
 }
 
 .typing
@@ -175,6 +180,7 @@ footer {
 .navbar-nav .nav-link {
   background-color: transparent;
   border: none;
+  
 }
 
 /* Add custom CSS to make the navbar transparent and text white */
@@ -184,8 +190,10 @@ footer {
 .navbar-brand {
   color: #fff !important; /* Set the color of the brand (JY) to white */
 }
+
 .navbar-nav .nav-link {
   color: #fff !important;
+  font-size: 15px;
 }
 
 /* Set the container to take full width of the viewport */
