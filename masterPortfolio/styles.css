@@ -60,7 +60,6 @@ header {
 
 #projects 
 {
-
   margin-top: 200px
 }
 
@@ -212,9 +211,7 @@ footer {
     }
 }
 
-
 /* Change the dropdown menu icon to white */
 .navbar-toggler-icon {
   background-color: #00FFC5;
 }
-
