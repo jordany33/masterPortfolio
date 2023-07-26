@@ -5,7 +5,7 @@ const words = ["making cool stuff.", "solving problems.", "learning new things."
 let currentWord = "";
 let isDeleting = false;
 let isWaiting = false;
-let speed = 40;
+let speed = 35;
 
 function typeWriter() {
   if (isWaiting) return;
