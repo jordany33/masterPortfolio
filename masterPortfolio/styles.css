@@ -38,11 +38,6 @@ header {
   flex-direction: column;
 }
 
-section
-{
-  margin-top: 33%;
-}
-
 .title {
   text-align: left;
   padding-top: 10rem;
@@ -56,33 +51,33 @@ section
 
 #about 
 {
-  padding: 20px;
+  padding-top: 33%;
 }
 
 #experience 
-{
-  padding: 20px;
+{ 
+  margin-top: 200px;
 }
 
 #projects 
 {
-  padding: 20px;
-  margin: 40px
+
+  margin-top: 200px
 }
 
 #skills 
 {
-  padding: 20px;
+  margin-top: 200px;
 }
 
 #resume 
 {
-  padding: 20px;
+  margin-top: 200px;
 }
 
 #contact 
 {
-  padding: 20px;
+  margin-top: 200px;
 }
 
 .typing
