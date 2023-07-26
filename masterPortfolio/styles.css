@@ -173,7 +173,7 @@ footer {
 /* Fix the alignment of the JY logo on small screens */
 @media (max-width: 767px) {
   .navbar-brand {
-    margin-right: auto;
+    margin: 0%;
   }
 }
 
