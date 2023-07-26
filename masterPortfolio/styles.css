@@ -157,6 +157,15 @@ footer {
   50% { opacity: 0; }
 }
 
+.typing::after {
+  content: ' ';
+  display: inline;
+  margin-left: 0;
+  border-right: .2ch solid;
+  transform: translateY(-.15em);
+  animation: blink 1s steps(1) infinite;
+}
+
 /* Make the navbar transparent */
 .navbar {
   background-color: transparent;
@@ -188,7 +197,7 @@ footer {
 /* Fix the alignment of the JY logo on small screens */
 @media (max-width: 767px) {
   .navbar-brand {
-    margin-right: auto;
+    margin: 0%;
   }
 }
 
