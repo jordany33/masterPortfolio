@@ -351,3 +351,17 @@ footer {
 .ham1.active .bottom {
   stroke-dashoffset: -138px;
 }
+
+/* Show hamburger menu only on screens smaller than 768px */
+@media (max-width: 767px) {
+  .ham {
+    display: block;
+  }
+}
+
+/* Hide hamburger menu on screens larger than 767px */
+@media (min-width: 768px) {
+  .ham {
+    display: none;
+  }
+}
