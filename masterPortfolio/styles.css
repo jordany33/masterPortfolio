@@ -27,7 +27,7 @@ header {
 
 /* Center the navigation links for small screens */
 .navbar-nav.ml-auto {
-  text-align: center;
+  text-align: center; 
 }
 
 .container {
@@ -50,28 +50,38 @@ header {
 
 #about 
 {
-  padding: 20px;
+  padding-top: 33%;
 }
 
 #experience 
-{
-  padding: 20px;
+{ 
+  margin-top: 200px;
 }
 
 #projects 
 {
-  padding: 20px;
-  margin: 40px
+
+  margin-top: 200px
 }
 
 #skills 
 {
-  padding: 20px;
+  margin-top: 200px;
 }
 
 #resume 
 {
-  padding: 20px;
+  margin-top: 200px;
+}
+
+.btn.resume-button {
+  color: #00FFC5;
+  border-color: #00FFC5;
+}
+
+.btn.resume-button:hover {
+  background-color: #00FFC5;
+  color: #fff;
 }
 
 .nav-item a[href="#resume"] {
@@ -80,7 +90,7 @@ header {
 
 #contact 
 {
-  padding: 20px;
+  margin-top: 200px;
 }
 
 .nav-item a[href="#about"]:hover,
@@ -142,24 +152,10 @@ footer {
   padding: 10px 0;
 }
 
-.typing {
-  display: inline;
-}
-
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
-
-.typing::after {
-  content: ' ';
-  display: inline;
-  margin-left: 0;
-  border-right: .2ch solid;
-  transform: translateY(-.15em);
-  animation: blink 1s steps(1) infinite;
-}
-
 
 /* Make the navbar transparent */
 .navbar {
