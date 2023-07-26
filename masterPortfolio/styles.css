@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #0f172a;
+  background-color: #171717;
   color: #fff;
 }
 
@@ -23,6 +23,17 @@ header {
 /* Center the logo for small screens */
 .navbar-brand {
   margin: 0 auto;
+}
+
+.navbar-brand {
+  color: #fff !important; /* Set the color of the brand (JY) to white */
+  transition: transform 0.5s, box-shadow 0.5s; /* Add this line */
+  font-size: 30px; /* adjust this value as needed */
+}
+
+.navbar-brand:hover {
+  transform: translateY(-5px) scale(1.05); /* New transform effect on hover */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5); /* New box shadow effect on hover */
 }
 
 /* Center the navigation links for small screens */
@@ -50,7 +61,7 @@ header {
 
 #about 
 {
-  padding-top: 33%;
+  margin-top: 200px;
 }
 
 #experience 
@@ -76,11 +87,13 @@ header {
 .btn.resume-button {
   color: #00FFC5;
   border-color: #00FFC5;
+  transition: transform 0.5s, box-shadow 0.5s; /* Add this line */
+  font-size: 15px;
 }
 
 .btn.resume-button:hover {
-  background-color: #00FFC5;
-  color: #fff;
+  transform: translateY(-5px) scale(1.05); /* New transform effect on hover */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5); /* New box shadow effect on hover */
 }
 
 .nav-item a[href="#resume"] {
@@ -103,6 +116,10 @@ header {
   color: #fff !important;
 }
 
+.nav-item {
+  margin-right: 20px; /* adjust this value as needed */
+}
+
 .typing
 {
   text-align: left;
@@ -115,13 +132,23 @@ h1 {
   font-size: 80px;
   line-height: 88px;
   color: #ccd6f6; /* Color for "Jordan Yee" */
+  margin-bottom: 5px; 
+  word-spacing: 2px; /* adjust as needed */
 }
 
-h7 {
+h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #00FFC5;
+  margin-bottom: 30px; 
+  word-spacing: 5px; /* adjust as needed */
+}
+
+.white-text {
+  color: #8892b0;
+  font-size: 20px;
+  max-width: 600px;  /* adjust as needed */
 }
 
 .title h1 span {
@@ -130,6 +157,9 @@ h7 {
   font-size: 80px;
   line-height: 72px;
   color: #8892b0; /* Color for "I like..." */
+  word-spacing: 2px; /* adjust as needed */
+  display: inline-block; /* add this line */
+  margin-bottom: 30px; /* adjust as needed */
 }
 
 main {
@@ -168,12 +198,15 @@ footer {
 /* Make the navbar transparent */
 .navbar {
   background-color: transparent;
+  position: relative; /* add this line if not already positioned */
+  z-index: 100; /* adjust this value as needed */
 }
 
 /* Remove background color and border from the navbar links */
 .navbar-nav .nav-link {
   background-color: transparent;
   border: none;
+  
 }
 
 /* Add custom CSS to make the navbar transparent and text white */
@@ -182,9 +215,12 @@ footer {
 }
 .navbar-brand {
   color: #fff !important; /* Set the color of the brand (JY) to white */
+  font-size: 25px !important; 
 }
+
 .navbar-nav .nav-link {
   color: #fff !important;
+  font-size: 15px;
 }
 
 /* Set the container to take full width of the viewport */
@@ -214,4 +250,68 @@ footer {
 /* Change the dropdown menu icon to white */
 .navbar-toggler-icon {
   background-color: #00FFC5;
+<<<<<<< HEAD
 }
+=======
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+  z-index: 1; /* New z-index property */
+}
+  
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  animation: drop 7s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+  
+.line:nth-child(1) {
+  margin-left: -25%;
+}
+
+.line:nth-child(1)::after {
+  animation-delay: 2s;
+}
+  
+.line:nth-child(3) {
+  margin-left: 25%;
+}
+
+.line:nth-child(3)::after {
+  animation-delay: 2.5s;
+}
+    
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+>>>>>>> main
