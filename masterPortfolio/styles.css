@@ -25,6 +25,17 @@ header {
   margin: 0 auto;
 }
 
+.navbar-brand {
+  color: #fff !important; /* Set the color of the brand (JY) to white */
+  transition: transform 0.5s, box-shadow 0.5s; /* Add this line */
+  font-size: 30px; /* adjust this value as needed */
+}
+
+.navbar-brand:hover {
+  transform: translateY(-5px) scale(1.05); /* New transform effect on hover */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5); /* New box shadow effect on hover */
+}
+
 /* Center the navigation links for small screens */
 .navbar-nav.ml-auto {
   text-align: center; 
@@ -78,6 +89,7 @@ header {
   color: #00FFC5;
   border-color: #00FFC5;
   transition: transform 0.5s, box-shadow 0.5s; /* Add this line */
+  font-size: 15px;
 }
 
 .btn.resume-button:hover {
@@ -121,13 +133,23 @@ h1 {
   font-size: 80px;
   line-height: 88px;
   color: #ccd6f6; /* Color for "Jordan Yee" */
+  margin-bottom: 5px; 
+  word-spacing: 2px; /* adjust as needed */
 }
 
-h7 {
+h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #00FFC5;
+  margin-bottom: 30px; 
+  word-spacing: 5px; /* adjust as needed */
+}
+
+.white-text {
+  color: #8892b0;
+  font-size: 20px;
+  max-width: 600px;  /* adjust as needed */
 }
 
 .title h1 span {
@@ -136,6 +158,9 @@ h7 {
   font-size: 80px;
   line-height: 72px;
   color: #8892b0; /* Color for "I like..." */
+  word-spacing: 2px; /* adjust as needed */
+  display: inline-block; /* add this line */
+  margin-bottom: 30px; /* adjust as needed */
 }
 
 main {
@@ -189,6 +214,7 @@ footer {
 }
 .navbar-brand {
   color: #fff !important; /* Set the color of the brand (JY) to white */
+  font-size: 25px !important; 
 }
 
 .navbar-nav .nav-link {
