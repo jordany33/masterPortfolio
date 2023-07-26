@@ -44,6 +44,10 @@ header {
   padding-bottom: 10rem;
 }
 
+.navbar-brand[href="#"] {
+  color: #00FFC5 !important;
+}
+
 #about 
 {
   padding: 20px;
@@ -70,6 +74,10 @@ header {
   padding: 20px;
 }
 
+.nav-item a[href="#resume"] {
+  color: #00FFC5 !important;
+}
+
 #contact 
 {
   padding: 20px;
@@ -93,7 +101,7 @@ h7 {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #64ffda;
+  color: #00FFC5;
 }
 
 .title h1 span {
@@ -181,4 +189,3 @@ footer {
 .navbar-toggler-icon {
   background-color: #fff;
 }
-
