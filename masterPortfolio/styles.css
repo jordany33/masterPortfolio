@@ -315,14 +315,41 @@ footer {
 
 .social-overlap {
   display: flex;
-  justify-content: flex-start; /* Align items to the start of the container. */
-  align-items: center;
+  justify-content: flex-start;
+  align-items: center;     
   height: 0vh; 
   width: 100%;
+  margin-left: -42%; /* Default value for large screens */
+}
+
+@media (max-width: 1200px) {
+  .social-overlap {
+    margin-left: -41%; /* Adjust for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .social-overlap {
+    margin-left: -37%; /* Adjust for small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .social-overlap {
+    margin-left: -32%; /* Adjust for extra small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .social-overlap {
+    display: none; /* Hide the icons for very small screens */
+  }
 }
 
 .social-icons {
-  margin-left: -343%; /* Change this value to move your content left or right. */
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
 }
 
 .justify-content-center {
