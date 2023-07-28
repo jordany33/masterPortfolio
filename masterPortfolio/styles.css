@@ -252,6 +252,18 @@ footer {
     }
 }
 
+@media (max-width: 992px) {
+  .title h1 {
+    font-size: 26px;
+    line-height: 25px;
+  }
+  .title h1 span {
+    font-size: 26px;
+    line-height: 22px;
+    }
+}
+
+
 /* Change the dropdown menu icon to white */
 .navbar-toggler-icon {
   background-color: #00FFC5;
