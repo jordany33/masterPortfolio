@@ -61,7 +61,7 @@ header {
 
 #about 
 {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 #experience 
@@ -252,6 +252,18 @@ footer {
     }
 }
 
+@media (max-width: 992px) {
+  .title h1 {
+    font-size: 26px;
+    line-height: 25px;
+  }
+  .title h1 span {
+    font-size: 26px;
+    line-height: 22px;
+    }
+}
+
+
 /* Change the dropdown menu icon to white */
 .navbar-toggler-icon {
   background-color: #00FFC5;
@@ -396,7 +408,7 @@ footer {
   flex-shrink: 0;
   border-radius: 50%;
   text-align: center;
-  background: #FFFFFF ;
+  background: #ccd6f6 ;
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -593,5 +605,39 @@ footer {
     width: 30px;
     margin: 15px 10px;
     line-height: 28px;
+  }
+}
+
+#about p {
+  max-width: 75%; /* Limit the width to 75% of the parent's width */
+  margin: 0 auto; /* Center the text horizontally */
+}
+
+.card-list {
+  margin: 0;
+  padding: 20px;
+  white-space: nowrap;
+}
+
+.card-item {
+  display: inline-block;
+  width: 200px;
+  height: 260px;
+  background-color: #ccd6f6;
+  border-radius: 20px;
+  box-shadow: -20px 8px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0);
+
+  &:not(:last-child) {
+    margin-right: -100px;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+  
+  &:not(:last-child):hover {
+    margin-right: -10px;
   }
 }
