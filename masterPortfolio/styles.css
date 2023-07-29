@@ -608,9 +608,14 @@ footer {
   }
 }
 
+#about {
+  margin-top: 50px;
+  padding-left: 100px;  /* Move content to the right by adding left padding */
+}
+
 #about p {
-  max-width: 75%; /* Limit the width to 75% of the parent's width */
-  margin: 0 auto; /* Center the text horizontally */
+  text-align: left;    /* Aligns the paragraph text to the left */
+  max-width: 60%;      /* Limit the width to 75% of the parent's width */
 }
 
 .card-list {
