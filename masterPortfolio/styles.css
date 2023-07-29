@@ -620,6 +620,7 @@ footer {
 
 #about h2 {
   margin-right: 10px;    /* Adds some space between the title and the line */
+  margin-bottom: 40px;   /* Adds a bottom margin to the title */
 }
 
 #about .about-line {
@@ -633,6 +634,7 @@ footer {
 #about p {
   text-align: left;    /* Aligns the paragraph text to the left */
   max-width: 60%;      /* Limit the width to 75% of the parent's width */
+  margin-top: 15px;     /* Add top margin to create more space */
 }
 
 .card-list {
