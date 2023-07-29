@@ -629,6 +629,7 @@ footer {
   border-top: 1px solid; /* Adds a 1px line at the top */
   height: 1px;
   margin-left: 20px;
+  padding: 20px 0;       /* Add padding to vertically align the line */
 }
 
 #about p {
