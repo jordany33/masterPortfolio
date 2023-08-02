@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../views/styles.css">
 </head>
 <body>
   <header>
@@ -75,21 +75,15 @@
       </div>
     
       <section id="about">
-        <h2>About Me</h2>
+        <div class="about-header">
+          <h2>About Me</h2>
+          <hr class="about-line">
+        </div>
         <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
         <p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
-        <p>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</p>
-
-        <ul class="card-list">
-          <li class="card-item"></li>
-          <li class="card-item"></li>
-          <li class="card-item"></li>
-          <li class="card-item"></li>
-          <li class="card-item"></li>
-        </ul>
-
+        <p>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</p>  
       </section>
-
+      
       <section id="experience">
         <h2>Experience</h2>
         <!-- Add your experience content here -->
@@ -97,7 +91,9 @@
 
       <section id="projects">
         <h2>Projects</h2>
-        <!-- Add more projects as needed -->
+        <img src="https://picsum.photos/id/669/300/300" alt="the back of random person">
+        <img src="https://assets.codepen.io/1480814/pexels-pixabay-62655.jpg" alt="an eagle" style="--f:.12;--r:5px">
+        <img src="https://picsum.photos/id/326/300/300" alt="a cup of something to drink, probably some tea" style="--f:.08;--r:20px">
       </section>
 
       <section id="contact">
@@ -122,7 +118,7 @@
   </footer>
 
   <!-- JavaScript link -->
-  <script src="script.js"></script>
+  <script src="../scripts/script.js"></script>
   <!-- Add Bootstrap JS link -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>

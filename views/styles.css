@@ -51,8 +51,8 @@ header {
 
 .title {
   text-align: left;
-  padding-top: 10rem;
-  padding-bottom: 25rem;
+  padding-top: 20vh;  /* Adjust as needed */
+  padding-bottom: 45vh;  /* Adjust as needed */
 }
 
 .navbar-brand[href="#"] {
@@ -608,36 +608,52 @@ footer {
   }
 }
 
+#about {
+  margin-top: 50px;
+  padding-left: 100px;  /* Move content to the right by adding left padding */
+}
+
+#about .about-header {
+  display: flex;         /* Aligns the title and the line horizontally */
+  align-items: center;   /* Aligns the title and the line vertically */
+}
+
+#about h2 {
+  margin-right: 10px;    /* Adds some space between the title and the line */
+  margin-bottom: 40px;   /* Adds a bottom margin to the title */
+}
+
+#about .about-line {
+  width: 300px;          /* Adjust this to change the length of the line */
+  border: none;          /* Removes the default border */
+  border-top: 1px solid; /* Adds a 1px line at the top */
+  height: 1px;
+  margin-left: 20px;
+  padding: 20px 0;       /* Add padding to vertically align the line */
+}
+
 #about p {
-  max-width: 75%; /* Limit the width to 75% of the parent's width */
-  margin: 0 auto; /* Center the text horizontally */
+  text-align: left;    /* Aligns the paragraph text to the left */
+  max-width: 60%;      /* Limit the width to 75% of the parent's width */
+  margin-top: 15px;     /* Add top margin to create more space */
 }
 
-.card-list {
-  margin: 0;
-  padding: 20px;
-  white-space: nowrap;
-}
-
-.card-item {
-  display: inline-block;
-  width: 200px;
-  height: 260px;
-  background-color: #ccd6f6;
-  border-radius: 20px;
-  box-shadow: -20px 8px 40px rgba(0, 0, 0, 0.4);
-  transition: all 0.2s ease-in-out;
-  transform: translateY(0);
-
-  &:not(:last-child) {
-    margin-right: -100px;
-  }
-
-  &:hover {
-    transform: translateY(-10px);
-  }
+img {
+  --f: .1; /* the parallax factor (the smaller the better) */
+  --r: 10px; /* radius */
   
-  &:not(:last-child):hover {
-    margin-right: -10px;
-  }
+  --_f: calc(100%*var(--f)/(1 + var(--f)));
+  --_a: calc(90deg*var(--f));
+  width: 250px; /* the image size */
+  aspect-ratio: calc(1 + var(--f));
+  object-fit: cover;
+  clip-path: inset(0 var(--_f) 0 0 round var(--r));
+  transform: perspective(400px) var(--_t,rotateY(var(--_a)));
+  transition: .5s;
+  cursor: pointer;
 }
+img:hover {
+  clip-path: inset(0 0 0 var(--_f) round var(--r));
+  --_t: translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+}
+
