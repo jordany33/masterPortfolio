@@ -369,12 +369,6 @@ footer {
   }
 }
 
-@media (max-width: 576px) {
-  .social-overlap {
-    display: none; /* Hide the icons for very small screens */
-  }
-}
-
 .social-icons {
   display: flex;
   justify-content: space-between;
