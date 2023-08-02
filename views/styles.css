@@ -33,7 +33,6 @@ header {
 
 .navbar-brand:hover {
   transform: translateY(-5px) scale(1.05); /* New transform effect on hover */
-  box-shadow: 0 0 1rem rgba(0, 0, 0, .5); /* New box shadow effect on hover */
 }
 
 /* Center the navigation links for small screens */
@@ -44,7 +43,6 @@ header {
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
   flex-direction: column;
 }
@@ -52,7 +50,7 @@ header {
 .title {
   text-align: left;
   padding-top: 20vh;  /* Adjust as needed */
-  padding-bottom: 45vh;  /* Adjust as needed */
+  padding-bottom: 50vh;  /* Adjust as needed */
 }
 
 .navbar-brand[href="#"] {
@@ -94,7 +92,6 @@ header {
 
 .btn.resume-button:hover {
   transform: translateY(-5px) scale(1.05); /* New transform effect on hover */
-  box-shadow: 0 0 1rem rgba(0, 0, 0, .5); /* New box shadow effect on hover */
 }
 
 .nav-item a[href="#resume"] {
@@ -234,35 +231,51 @@ footer {
   padding-right: 0;
 }
 
-/* Fix the alignment of the JY logo on small screens */
-@media (max-width: 767px) {
-  .navbar-brand {
-    margin: 0%;
-  }
+/* Default styling for larger screens */
+.title h1 {
+  font-size: 80px;
+  line-height: 88px;
+}
+.title h1 span {
+  font-size: 80px;
+  line-height: 72px;
 }
 
-@media (max-width: 767px) {
+/* Styling for medium screens */
+@media (max-width: 1200px) {
   .title h1 {
-    font-size: 26px;
-    line-height: 25px;
+    font-size: 64px;  /* 80% of original size */
+    line-height: 70px;  /* Roughly maintaining the same proportion */
   }
   .title h1 span {
-    font-size: 26px;
-    line-height: 22px;
-    }
+    font-size: 64px;  /* 80% of original size */
+    line-height: 58px;  /* Roughly maintaining the same proportion */
+  }
 }
 
+/* Styling for small screens */
 @media (max-width: 992px) {
   .title h1 {
-    font-size: 26px;
-    line-height: 25px;
+    font-size: 48px;  /* 60% of original size */
+    line-height: 52px;  /* Roughly maintaining the same proportion */
   }
   .title h1 span {
-    font-size: 26px;
-    line-height: 22px;
-    }
+    font-size: 48px;  /* 60% of original size */
+    line-height: 43px;  /* Roughly maintaining the same proportion */
+  }
 }
 
+/* Styling for extra small screens */
+@media (max-width: 767px) {
+  .title h1 {
+    font-size: 32px;  /* 40% of original size */
+    line-height: 35px;  /* Roughly maintaining the same proportion */
+  }
+  .title h1 span {
+    font-size: 32px;  /* 40% of original size */
+    line-height: 29px;  /* Roughly maintaining the same proportion */
+  }
+}
 
 /* Change the dropdown menu icon to white */
 .navbar-toggler-icon {
@@ -324,31 +337,35 @@ footer {
     display: none;
   }
 }
-
 .social-overlap {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center; /* Center the icons */
   align-items: center;     
   height: 0vh; 
   width: 100%;
-  margin-left: -42%; /* Default value for large screens */
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1201px) {
   .social-overlap {
-    margin-left: -41%; /* Adjust for medium screens */
+    margin-left: -3%; 
+  }
+}
+
+@media (min-width: 992px) {
+  .social-overlap {
+    margin-left: -3.5%; /* Adjust for small screens */
   }
 }
 
 @media (max-width: 992px) {
   .social-overlap {
-    margin-left: -37%; /* Adjust for small screens */
+    margin-left: -5%; /* Adjust for small screens */
   }
 }
 
 @media (max-width: 768px) {
   .social-overlap {
-    margin-left: -32%; /* Adjust for extra small screens */
+    margin-left: -7%; /* Adjust for extra small screens */
   }
 }
 
