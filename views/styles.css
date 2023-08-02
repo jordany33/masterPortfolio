@@ -678,8 +678,117 @@ img {
   transition: .5s;
   cursor: pointer;
 }
+
 img:hover {
   clip-path: inset(0 0 0 var(--_f) round var(--r));
   --_t: translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
 }
+
+.teaser-element-container {
+  --teaser__icon__color: #e6e6e6;
+  margin-bottom: 40px;
+  width: 50%;
+  height: calc(50% - 40px);
+  padding: 35px 30px;
+  position: relative;
+  border-radius: 12px;
+  background-color: #101010;
+  transition: background 0.45s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.teaser-element-container .icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 20px;
+}
+
+.teaser-element-container .icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.teaser-element-container h3 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 22px;
+  color: #e6e6e6;
+}
+
+.teaser-element-container p {
+  width: 85%;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #e6e6e6;
+}
+
+.teaser-element-container::before {
+  content: "";
+  display: block;
+  height: calc(100% + 2px);
+  width: calc(100% + 2px);
+  border-radius: 12px;
+  inset: -1px;
+  position: absolute;
+  z-index: -2;
+  right: -1px;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  transition: background 0.2s;
+  will-change: background;
+  contain: size;
+  background: radial-gradient(100px circle at var(--x__mouse__coordinate) var(--y__mouse__coordinate), #fff 0, #f3fefe 50%, transparent 100%);
+}
+
+.teaser-element-container:hover {
+  background-color: #1a1a1a;
+}
+
+.flex-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-start {
+  justify-content: flex-start;
+}
+
+.box-end {
+  justify-content: flex-end;
+}
+
+.box-center {
+  justify-content: center;
+}
+
+.box-align-center {
+  align-items: center;
+}
+
+.box-align-start {
+  align-items: flex-start;
+}
+
+.box-align-end {
+  align-items: flex-end;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+
 
