@@ -16,7 +16,6 @@ app.use( '/scripts', express.static('../scripts') )
 router.get( '/', ( req, res ) => 
 {
     res.sendFile( 'index.html', { root: '../views' } );
-    console.log(  );
 });
 
 // possible alternate dir
@@ -27,7 +26,6 @@ router.get( '/projects', ( req, res ) =>
 
 app.listen( port );
 console.log( 'server running on ' + port );
-
 
 
 // repo data
