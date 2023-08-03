@@ -650,7 +650,7 @@ footer {
 }
 
 #about .about-line {
-  width: 300px;          /* Adjust this to change the length of the line */
+  width: 400px;          /* Adjust this to change the length of the line */
   border: none;          /* Removes the default border */
   border-top: 1px solid; /* Adds a 1px line at the top */
   height: 1px;
@@ -769,6 +769,4 @@ blockquote,
 q {
   quotes: none;
 }
-
-
 
