@@ -770,3 +770,25 @@ q {
   quotes: none;
 }
 
+/* removed bullet points on ul */
+.card-deck ul {
+  list-style: none;
+}
+
+/* Adjust image sizing and pos */
+.card-deck img  {
+  width: 50px; 
+  margin: 20px;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1); 
+}
+
+.card-title:hover {
+  color: #00FFC5;
+}
