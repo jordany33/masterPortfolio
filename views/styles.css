@@ -120,7 +120,7 @@ header {
 .nav-item a[href="#about"]:hover,
 .nav-item a[href="#experience"]:hover,
 .nav-item a[href="#projects"]:hover,
-.nav-item a[href="#skills"]:hover {
+.nav-item a[href="#contact"]:hover {
   color: #00FFC5 !important;
 }
 
