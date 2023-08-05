@@ -665,14 +665,24 @@ footer {
 .card-deck img  {
   width: 50px; 
   margin: 20px;
+  /* margin-left: 270px; */
 }
 
 .card {
   transition: all 0.3s ease;
+  margin: 15px;
+  background-color: #101010;
+}
+
+.card-title {
+  position: absolute;
+  top: 75px;
+  right: 212px;
+  padding: -10px;
 }
 
 .card:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .card-title:hover {
