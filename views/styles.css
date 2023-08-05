@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
 ::-webkit-scrollbar {
   width: 8px; 
   height: 5px; 
@@ -66,7 +68,7 @@ header {
 }
 
 .navbar-brand[href="#"] {
-  color: #00FFC5 !important;
+  color: #64ffda !important;
 }
 
 #about 
@@ -96,7 +98,8 @@ header {
 }
 
 .btn.resume-button {
-  color: #00FFC5;
+  font-family: 'DM Sans', sans-serif;
+  color: #64ffda;
   border-color: #00FFC5;
   transition: transform 0.5s, box-shadow 0.5s; /* Add this line */
   font-size: 15px;
@@ -107,7 +110,7 @@ header {
 }
 
 .nav-item a[href="#resume"] {
-  color: #00FFC5 !important;
+  color: #64ffda !important;
 }
 
 #contact 
@@ -119,7 +122,7 @@ header {
 .nav-item a[href="#experience"]:hover,
 .nav-item a[href="#projects"]:hover,
 .nav-item a[href="#contact"]:hover {
-  color: #00FFC5 !important;
+  color: #64ffda !important;
 }
 
 .nav-item a[href="#resume"]:hover {
@@ -128,11 +131,6 @@ header {
 
 .nav-item {
   margin-right: 20px; /* adjust this value as needed */
-}
-
-.typing
-{
-  text-align: left;
 }
 
 /* Set the styles for h1 and h2 elements */
@@ -146,15 +144,14 @@ h1 {
   word-spacing: 2px; /* adjust as needed */
 }
 
-h6 {
-  font-family: 'Times New Roman', serif;
+.title .header {
+  font-family: 'DM Sans', sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #00FFC5;
   margin-bottom: 30px; 
-  word-spacing: 5px; /* adjust as needed */
+  word-spacing: 5px;
 }
-
 
 .white-text {
   color: #8892b0;
@@ -188,7 +185,8 @@ article {
 }
 
 footer {
-  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  color: #64ffda;
   text-align: center;
   padding: 10px 0;
 }
@@ -231,6 +229,7 @@ footer {
 }
 
 .navbar-nav .nav-link {
+  font-family: 'DM Sans', sans-serif;
   color: #fff !important;
   font-size: 15px;
 }
@@ -293,7 +292,7 @@ footer {
 
 /* Change the dropdown menu icon to white */
 .navbar-toggler-icon {
-  background-color: #00FFC5;
+  background-color: #64ffda;
 }
 
 .ham {
@@ -354,33 +353,33 @@ footer {
 
 .social-overlap {
   display: flex;
-  justify-content: center; /* Center the icons */
-  align-items: center;     
+  justify-content: left; /* Center the icons */
+  align-items: left;     
   height: 0vh; 
   width: 100%;
 }
 
 @media (max-width: 992px) {
   .social-overlap {
-    margin-left: -4.3%; /* Adjust for small screens */
+    margin-left: -2%; /* Adjust for small screens */
   }
 }
 
 @media (max-width: 768px) {
   .social-overlap {
-    margin-left: -6%; /* Adjust for extra small screens */
+    margin-left: -2.5%; /* Adjust for extra small screens */
   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
   .social-overlap {
-    margin-left: -3.2%; /* Adjust for medium screens */
+    margin-left: -1.3%; /* Adjust for medium screens */
   }
 }
 
 @media (min-width: 1201px) {
   .social-overlap {
-    margin-left: -2.7%; /* Adjust for large screens */
+    margin-left: -1.2%; /* Adjust for large screens */
   }
 }
 
@@ -438,6 +437,7 @@ footer {
   cursor: pointer;
   transition: all 0.4s ease;
 }
+
 .slider-nav-item:before {
   position: absolute;
   content: "";
@@ -540,8 +540,9 @@ footer {
   z-index: 0;
   animation: slide 1s linear infinite;
 }
+
 .mt100 {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 /* ----------------------------------------------
@@ -651,12 +652,12 @@ footer {
 }
 
 #about .about-line {
-  width: 300px;
-  border: none;
+  width: 300px;          /* Adjust this to change the length of the line */
+  border: none;          /* Removes the default border */
+  border-top: 1px solid; /* Adds a 1px line at the top */
   height: 1px;
   margin-left: 20px;
-  padding: 20px 0;
-  background: linear-gradient(to right, rgba(204, 214, 246, 0), #ccd6f6, rgba(204, 214, 246, 0));
+  padding: 20px 0;       /* Add padding to vertically align the line */
 }
 
 #about p {
@@ -697,7 +698,6 @@ footer {
 }
 
 .teaser-element-container h3 {
-  font-family: "Clash Display", sans-serif;
   font-size: 20px;
   line-height: 36px;
   margin-bottom: 22px;
@@ -706,7 +706,6 @@ footer {
 
 .teaser-element-container p {
   width: 85%;
-  font-family: "Satoshi", sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
