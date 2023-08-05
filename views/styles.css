@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #8892b0; 
+  background: #ccd6f6; 
   border-radius: 5px; 
 }
 
@@ -125,10 +125,6 @@ header {
   color: #64ffda !important;
 }
 
-.nav-item a[href="#resume"]:hover {
-  color: #fff !important;
-}
-
 .nav-item {
   margin-right: 20px; /* adjust this value as needed */
 }
@@ -169,6 +165,117 @@ h1 {
   word-spacing: 2px; /* adjust as needed */
   display: inline-block; /* add this line */
   margin-bottom: 30px; /* adjust as needed */
+}
+
+.box {
+  position: relative;
+  height: 100px;
+  display: flex;
+  cursor: pointer;
+  margin-top: 450px; /* Adjust this value to move the box down */
+  justify-content: center; /* Centers the text horizontally */
+}
+
+.box__text {
+  position: absolute;
+  display: flex;
+  margin-top: auto;
+  font-size: 11px;
+  color: #ccd6f6;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 50px;
+  animation: floatText 5s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px; /*change with size of arrow to make sit on bottom */
+  /*   background-image: url(); */
+  /*   background-size: contain; */
+}
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
 
 main {
@@ -216,7 +323,6 @@ footer {
 .navbar-nav .nav-link {
   background-color: transparent;
   border: none;
-  
 }
 
 /* Add custom CSS to make the navbar transparent and text white */
@@ -230,7 +336,7 @@ footer {
 
 .navbar-nav .nav-link {
   font-family: 'DM Sans', sans-serif;
-  color: #fff !important;
+  color: #ccd6f6 !important;
   font-size: 15px;
 }
 
@@ -796,3 +902,4 @@ q {
 .card-title:hover {
   color: #00FFC5;
 }
+
