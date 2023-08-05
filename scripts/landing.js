@@ -1,7 +1,7 @@
 // Typewriter effect
 let i = 0;
 let j = 0;
-const words = ["exploring the unknown."];
+const words = ["making cool stuff.", "solving problems.", "learning new things.", "exploring the unknown."];
 let currentWord = "";
 let isDeleting = false;
 let isWaiting = false;
