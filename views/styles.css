@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'Calibre';
-  src: url('path_to_your_font/Calibre-Regular.woff2') format('woff2'),
-       url('path_to_your_font/Calibre-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 ::-webkit-scrollbar {
   width: 8px; 
   height: 5px; 
@@ -154,12 +147,14 @@ h1 {
 }
 
 h6 {
+  font-family: 'Times New Roman', serif;
   font-size: 17px;
   line-height: 18px;
   color: #00FFC5;
   margin-bottom: 30px; 
   word-spacing: 5px; /* adjust as needed */
 }
+
 
 .white-text {
   color: #8892b0;
