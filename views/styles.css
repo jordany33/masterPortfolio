@@ -640,9 +640,10 @@ footer {
   align-items: center;   /* Aligns the title and the line vertically */
 }
 
-#about h2 {
+#about h1 {
+  font-size: 32px;
   margin-right: 10px;    /* Adds some space between the title and the line */
-  margin-bottom: 40px;   /* Adds a bottom margin to the title */
+  margin-bottom: 10px;   /* Adds a bottom margin to the title */
   color:#ccd6f6;
 }
 
@@ -678,9 +679,10 @@ footer {
   color: #00FFC5;
 }
 
-#experience h2 {
+#experience h1 {
+  font-size: 32px;
   margin-right: 10px;    /* Adds some space between the title and the line */
-  margin-bottom: 40px;   /* Adds a bottom margin to the title */
+  margin-bottom: 10px;   /* Adds a bottom margin to the title */
   color:#ccd6f6;
 }
 
@@ -768,4 +770,28 @@ footer {
 	line-height: 1.5em;
 	word-spacing: 1px;
 	color: #8892b0;
+}
+
+#projects h1 {
+  font-size: 32px;
+  margin-right: 10px;    /* Adds some space between the title and the line */
+  margin-bottom: 10px;   /* Adds a bottom margin to the title */
+  color:#ccd6f6;
+}
+
+.project-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#contact h1 {
+  font-size: 32px;
+  margin-right: 10px;    /* Adds some space between the title and the line */
+  margin-bottom: 10px;   /* Adds a bottom margin to the title */
+  color:#ccd6f6;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 40px;
 }
