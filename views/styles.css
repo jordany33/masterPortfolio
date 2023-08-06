@@ -647,9 +647,18 @@ footer {
   color:#ccd6f6;
 }
 
-#about p {
+.about-me-content {
   text-align: left;    /* Aligns the paragraph text to the left */
   max-width: 50%;      /* Limit the width to 75% of the parent's width */
+  margin-top: 15px;    /* Add top margin to create more space */
+  color:#8892b0;
+  font-size: 18px;     /* Adjusted to match .title h1 span */
+  line-height: 26px;
+}
+
+.skills-content {
+  text-align: left;    /* Aligns the paragraph text to the left */
+  max-width: 60%;      /* Limit the width to 75% of the parent's width */
   margin-top: 15px;    /* Add top margin to create more space */
   color:#8892b0;
   font-size: 18px;     /* Adjusted to match .title h1 span */
@@ -691,15 +700,28 @@ footer {
 
 #experience h1 {
   font-size: 32px;
-  margin-right: 10px;    /* Adds some space between the title and the line */
-  margin-bottom: 10px;   /* Adds a bottom margin to the title */
   color:#ccd6f6;
 }
 
 .title-container {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: -100px;
   color:#ccd6f6;
+}
+
+#experience .company {
+  font-size: 22px;
+  margin-bottom: -30px;
+}
+
+.timeline-content ul li {
+  font-size: 15px;
+  color: #8892b0;
+}
+
+.timeline-content .experience-description {
+  display: block;
+  margin-bottom: 20px; /* Adjust this value as needed */
 }
 
 .container-experience {
@@ -708,18 +730,6 @@ footer {
 	margin: 50px auto;
 	position: relative;
 	overflow: hidden;
-}
-
-.container-experience:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin-left: -1px;
-	width: 2px;
-	height: 100%;
-	background: #ccd6f6;
-	z-index: 1;
 }
 
 .timeline-block {
@@ -743,17 +753,6 @@ footer {
 
 .timeline-block-left {
 	float: left;
-	direction: rtl;
-}
-
-.marker {
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	border: 2px solid #64ffda;
-	background: #64ffda;
-	margin-top: 10px;
-	z-index: 9999;
 }
 
 .timeline-content {
@@ -805,3 +804,10 @@ footer {
   text-align: center;
   margin-bottom: 40px;
 }
+
+.skills-section {
+  margin-top: 200px;
+  padding-left: 200px; /* Adjust this value as needed */
+  box-sizing: border-box;
+}
+
