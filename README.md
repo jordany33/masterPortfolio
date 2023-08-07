@@ -61,7 +61,3 @@ If your project boasts a range of features, you should list them in this section
 ## How to Contribute
 
 If you have developed an application or package and would like other developers to contribute, you can include guidelines in this section. The [Contributor Covenant](https://www.contributor-covenant.org/) provides a widely accepted standard, but feel free to write your own guidelines if you prefer.
-
-## Tests
-
-Demonstrate your commitment to quality by writing tests for your application. In this section, provide examples of how to run these tests.
