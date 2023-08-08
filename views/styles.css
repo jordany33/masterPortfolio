@@ -74,7 +74,7 @@ header {
     /* Adjust as needed */
 }
 
-.navbar-brand[href="/landing"] {
+.navbar-brand[href="/"] {
     color: #64ffda !important;
 }
 
@@ -121,10 +121,17 @@ header {
     margin-top: 200px;
 }
 
-.nav-item a[href="#about"]:hover,
+.nav-item a[href="/content"]:hover,
 .nav-item a[href="#experience"]:hover,
 .nav-item a[href="#projects"]:hover,
 .nav-item a[href="#contact"]:hover {
+    color: #64ffda !important;
+}
+
+.nav-item a[href="/content"]:hover,
+.nav-item a[href="/content/#experience"]:hover,
+.nav-item a[href="/content/#projects"]:hover,
+.nav-item a[href="/content/#contact"]:hover {
     color: #64ffda !important;
 }
 
@@ -887,4 +894,69 @@ footer {
     padding-left: 200px;
     /* Adjust this value as needed */
     box-sizing: border-box;
+}
+
+.direct {
+    display: inline-block;
+    padding: 1.2rem 4.5rem;  /* Adjusted padding */
+    border-radius: 4.5rem 4.5rem;  /* Adjusted border-radius */
+    position: relative;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.direct-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;  /* Adjusted font-size */
+    line-height: 1.1em;  /* Adjusted line-height */
+    color: #ccd6f6;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    padding-right: 1.1rem;  /* Adjusted padding */
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.74, 0.99);
+    transition-duration: 0.4s;
+    z-index: 5;
+}
+
+.direct:hover .direct-text {
+    transform: translateX(-0.25rem);  /* Adjusted transform value */
+}
+
+.direct-text:after {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -48%);
+    margin-top: -1px;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.74, 0.99);
+    transition-duration: 0.4s;
+}
+
+.direct:hover .direct-text:after {
+    transform: translate(3rem, -50%);  /* Adjusted transform value */
+}
+
+.direct-bg {
+    border: solid 3px #00FFC5;
+    border-radius: 3.2rem 3.2rem;  /* Adjusted border-radius */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition-property: left;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.74, 0.99);
+    transition-duration: 0.4s;
+}
+
+.direct:hover .direct-bg {
+    left: calc(100% - 4.5rem);  /* Adjusted calc value */
+}
+
+.direct:hover {
+    text-decoration: none;
 }
