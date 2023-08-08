@@ -681,7 +681,7 @@ footer {
   padding: -10px;
 }
 
-.card:hover {
+.card:hover { 
   transform: scale(1.1);
 }
 
