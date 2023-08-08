@@ -73,7 +73,7 @@ header {
     /* Adjust as needed */
 }
 
-.navbar-brand[href="#"] {
+.navbar-brand[href="/landing"] {
     color: #64ffda !important;
 }
 
