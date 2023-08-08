@@ -127,6 +127,13 @@ header {
     color: #64ffda !important;
 }
 
+.nav-item a[href="/content"]:hover,
+.nav-item a[href="/content/#experience"]:hover,
+.nav-item a[href="/content/#projects"]:hover,
+.nav-item a[href="/content/#contact"]:hover {
+    color: #64ffda !important;
+}
+
 .nav-item {
     margin-right: 20px;
     /* adjust this value as needed */
@@ -886,3 +893,62 @@ footer {
     /* Adjust this value as needed */
     box-sizing: border-box;
 }
+
+.direct {
+    display: inline-block;
+    padding: 1.4375rem 5.4375rem;
+    border-radius: 5.625rem 5.625rem;
+    position: relative;
+    text-decoration: none;
+    margin-top: 50px;
+  }
+  .direct-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.625rem;
+    line-height: 1.2em;
+    color: #ccd6f6;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    padding-right: 1.25rem;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.74, 0.99);
+    transition-duration: 0.4s;
+    z-index: 5;
+  }
+  .direct:hover .direct-text {
+    transform: translateX(-0.3125rem);
+  }
+  .direct-text:after {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -48%);
+    margin-top: -1px;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.74, 0.99);
+    transition-duration: 0.4s;
+  }
+  .direct:hover .direct-text:after {
+    transform: translate(3.625rem, -50%);
+  }
+  .direct-bg {
+    border: solid 3px #00FFC5;
+    border-radius: 3.75rem 3.75rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition-property: left;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.74, 0.99);
+    transition-duration: 0.4s;
+  }
+  .direct:hover .direct-bg {
+    left: calc(100% - 5rem);
+  }
+  
+  .direct:hover {
+    text-decoration: none;
+  }
