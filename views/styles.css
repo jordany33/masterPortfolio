@@ -120,7 +120,7 @@ header {
     margin-top: 200px;
 }
 
-.nav-item a[href="#about"]:hover,
+.nav-item a[href="/content"]:hover,
 .nav-item a[href="#experience"]:hover,
 .nav-item a[href="#projects"]:hover,
 .nav-item a[href="#contact"]:hover {
