@@ -28,7 +28,12 @@ app.use('/', express.static('../'));
 
 // get root dir (https://jordany.dev/) & send to index.html
 router.get('/', (req, res, next) => {
-    res.sendFile('index.html', { root: '../views' });
+    res.sendFile('landing.html', { root: '../views' });
+});
+
+router.get( '/content', ( req, res ) =>
+{
+    res.sendFile( 'content.html', { root: '../views' } );
 });
 
 // possible alternate dir
