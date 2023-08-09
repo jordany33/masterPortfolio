@@ -113,6 +113,12 @@ header {
     /* New transform effect on hover */
 }
 
+.btn.resume-button:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #00FFC5; /* Set this to your button's normal state border color */
+}
+
 .nav-item a[href="#resume"] {
     color: #64ffda !important;
 }
@@ -150,7 +156,7 @@ h1 {
     /* Color for "Jordan Yee" */
     margin-bottom: 5px;
     word-spacing: 2px;
-    /* adjust as needed */
+    /* adjust as needed */ 
 }
 
 .title .header {
@@ -166,8 +172,8 @@ h1 {
     color: #8892b0;
     font-size: 18px;
     max-width: 600px;
-    /* adjust as needed */
     line-height: 26px;
+    margin-bottom: 30px;
 }
 
 .title h1 span {
@@ -176,13 +182,9 @@ h1 {
     font-size: 80px;
     line-height: 72px;
     color: #8892b0;
-    /* Color for "I like..." */
     word-spacing: 2px;
-    /* adjust as needed */
     display: inline-block;
-    /* add this line */
     margin-bottom: 30px;
-    /* adjust as needed */
 }
 
 main {
@@ -199,6 +201,7 @@ article {
 }
 
 footer {
+    font-size: 16px;
     font-family: 'DM Sans', sans-serif;
     color: #64ffda;
     text-align: center;
@@ -277,7 +280,7 @@ footer {
 .title h1 span {
     font-size: 80px;
     line-height: 72px;
-    color: #545454;
+    color: #8892b0;
 }
 
 /* Styling for medium screens */
@@ -870,23 +873,42 @@ footer {
     color: #ccd6f6;
 }
 
-.project-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-#contact h1 {
-    font-size: 60px;
-    margin-right: 10px;
-    /* Adds some space between the title and the line */
-    margin-bottom: 10px;
-    /* Adds a bottom margin to the title */
-    color: #ccd6f6;
+#contact {
+    display: flex;
+    flex-direction: column; /* Children remain stacked vertically */
+    justify-content: center; /* Centers the items vertically */
+    align-items: center; /* Centers the items horizontally */
 }
 
 .contact-title {
+    font-size: 60px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    color: #ccd6f6;
+}
+
+.contact-sub {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 26px;
+    width: 50%;
+}
+
+.contact-sub {
+    color: #00FFC5;
+}
+
+#contact p {
+    color: #8892b0;
 }
 
 .skills-section {
@@ -896,67 +918,88 @@ footer {
     box-sizing: border-box;
 }
 
-.direct {
+button {
+    position: relative;
     display: inline-block;
-    padding: 1.2rem 4.5rem;  /* Adjusted padding */
-    border-radius: 4.5rem 4.5rem;  /* Adjusted border-radius */
-    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
     text-decoration: none;
-    margin-top: 50px;
-}
-
-.direct-text {
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
     font-family: 'DM Sans', sans-serif;
-    font-size: 1.4rem;  /* Adjusted font-size */
-    line-height: 1.1em;  /* Adjusted line-height */
-    color: #ccd6f6;
-    font-weight: 700;
-    display: block;
+  }
+  button.learn-more {
+    width: 12rem;
+    height: auto;
+  }
+  button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
-    padding-right: 1.1rem;  /* Adjusted padding */
-    transition-property: transform;
-    transition-timing-function: cubic-bezier(0.65, 0, 0.74, 0.99);
-    transition-duration: 0.4s;
-    z-index: 5;
-}
-
-.direct:hover .direct-text {
-    transform: translateX(-0.25rem);  /* Adjusted transform value */
-}
-
-.direct-text:after {
-    content: ">";
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #00ffc3c0;
+    border-radius: 1.625rem;
+  }
+  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -48%);
-    margin-top: -1px;
-    transition-property: transform;
-    transition-timing-function: cubic-bezier(0.65, 0, 0.74, 0.99);
-    transition-duration: 0.4s;
-}
-
-.direct:hover .direct-text:after {
-    transform: translate(3rem, -50%);  /* Adjusted transform value */
-}
-
-.direct-bg {
-    border: solid 3px #00FFC5;
-    border-radius: 3.2rem 3.2rem;  /* Adjusted border-radius */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #ccd6f6;
+  }
+  button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #ccd6f6;
+    border-right: 0.125rem solid #ccd6f6;
+    transform: rotate(45deg);
+  }
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    transition-property: left;
-    transition-timing-function: cubic-bezier(0.65, 0, 0.74, 0.99);
-    transition-duration: 0.4s;
-}
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ccd6f6;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  button:hover .circle {
+    width: 100%;
+  }
+  button:hover .circle .icon.arrow {
+    background: #ccd6f6;
+    transform: translate(1rem, 0);
+  }
+  button:hover .button-text {
+    color: #171717;
+  }
+  button:focus {
+    outline: none;
+  }
 
-.direct:hover .direct-bg {
-    left: calc(100% - 4.5rem);  /* Adjusted calc value */
-}
-
-.direct:hover {
-    text-decoration: none;
+#projects {
+    text-align: center;
 }
