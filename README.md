@@ -50,8 +50,6 @@ The license section of the README file provides information on what other develo
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
 While not strictly necessary, badges can add credibility to your project. They demonstrate to other developers that you're proficient and knowledgeable. For a variety of badges, visit [shields.io](https://shields.io/). As you progress in your development journey, you'll come to understand what these badges represent.
 
 ## Features
