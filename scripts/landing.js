@@ -5,7 +5,7 @@ const words = ["making cool stuff.", "solving problems.", "learning new things."
 let currentWord = "";
 let isDeleting = false;
 let isWaiting = false;
-let speed = 50;
+let speed = 45;
 
 function typeWriter() {
     if (isWaiting) return;
@@ -69,3 +69,4 @@ McButton.click(function () {
         McBar1.velocity("reverse", { delay: 800 });
     }
 });
+
