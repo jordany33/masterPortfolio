@@ -102,7 +102,8 @@ header {
 .btn.resume-button {
     font-family: 'DM Sans', sans-serif;
     color: #64ffda;
-    border-color: #00FFC5;
+    border: 2px solid #64ffda; 
+    border-radius: 5px; /* Adjust the border-radius if needed */
     transition: transform 0.5s, box-shadow 0.5s;
     /* Add this line */
     font-size: 15px;
@@ -116,7 +117,7 @@ header {
 .btn.resume-button:focus {
     outline: none;
     box-shadow: none;
-    border-color: #00FFC5; /* Set this to your button's normal state border color */
+    border-color: #64ffda; /* Set this to your button's normal state border color */
 }
 
 .nav-item a[href="#resume"] {
@@ -163,7 +164,7 @@ h1 {
     font-family: 'DM Sans', sans-serif;
     font-size: 17px;
     line-height: 18px;
-    color: #00FFC5;
+    color: #64ffda;
     margin-bottom: 30px;
     word-spacing: 5px;
 }
@@ -216,7 +217,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #00FFC5;
+    color: #64ffda;
     cursor: pointer;
     text-decoration: none;
 }
@@ -790,7 +791,7 @@ footer a:hover {
 }
 
 .card-title:hover {
-    color: #00FFC5;
+    color: #64ffda;
 }
 
 #experience h1 {
@@ -917,7 +918,7 @@ footer a:hover {
 }
 
 .contact-sub {
-    color: #00FFC5;
+    color: #64ffda;
 }
 
 #contact p {
@@ -928,7 +929,7 @@ footer a:hover {
 .contact-button {
     font-family: 'DM Sans', sans-serif;
     color: #64ffda;
-    border: 2px solid #00FFC5; /* Adjust the border width if needed */
+    border: 2px solid #64ffda; /* Adjust the border width if needed */
     border-radius: 5px; /* Adjust the border-radius if needed */
     transition: transform 0.5s, box-shadow 0.5s;
     font-size: 16px;
@@ -943,7 +944,7 @@ footer a:hover {
 .contact-button:focus {
     outline: none;
     box-shadow: none;
-    border-color: #00FFC5; /* Set this to your button's normal state border color */
+    border-color: #64ffda; /* Set this to your button's normal state border color */
 }
 
 .skills-section {
