@@ -788,6 +788,7 @@ footer a:hover {
 
 .card:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .card-title:hover {
@@ -808,6 +809,7 @@ footer a:hover {
 #experience .company {
     font-size: 22px;
     margin-bottom: -30px;
+    color: #64ffda;
 }
 
 .timeline-content ul li {
