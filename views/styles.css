@@ -201,11 +201,24 @@ article {
 }
 
 footer {
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'DM Sans', sans-serif;
-    color: #64ffda;
+    color: #8892b0;
     text-align: center;
     padding: 10px 0;
+    margin-top: 150px;
+}
+
+footer a {
+    color: inherit;  /* This ensures the link takes on the footer's color */
+    text-decoration: none;  /* Remove the default underline of links */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00FFC5;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @keyframes blink {
@@ -909,6 +922,28 @@ footer {
 
 #contact p {
     color: #8892b0;
+    margin-bottom: 50px;
+}
+
+.contact-button {
+    font-family: 'DM Sans', sans-serif;
+    color: #64ffda;
+    border: 2px solid #00FFC5; /* Adjust the border width if needed */
+    border-radius: 5px; /* Adjust the border-radius if needed */
+    transition: transform 0.5s, box-shadow 0.5s;
+    font-size: 16px;
+    padding: 10px 20px; /* Add padding for better appearance */
+}
+
+.contact-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    /* New transform effect on hover */
+}
+
+.contact-button:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #00FFC5; /* Set this to your button's normal state border color */
 }
 
 .skills-section {
@@ -1003,3 +1038,4 @@ button {
 #projects {
     text-align: center;
 }
+
