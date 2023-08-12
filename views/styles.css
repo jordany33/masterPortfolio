@@ -773,6 +773,14 @@ footer a:hover {
 
 
 
+.card-deck
+{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+    gap: 10px;
+    outline: #64ffda 5px solid;
+}
+
 .card {
     transition: all 0.3s ease;
     margin: 15px;
@@ -782,6 +790,13 @@ footer a:hover {
     text-align: left; /* Ensures the text inside the card is left-aligned */
 }
 
+.card-body
+{
+    margin: auto;
+    padding: 20px;
+    /* outline: #64ffda 5px solid; */
+}
+
 .card-img-top {
     width: 50px;
     margin: 0 0 10px 0;
@@ -789,9 +804,9 @@ footer a:hover {
 }
 
 .card-title {
-    margin: 0;
     color: #fff;
     width: 100%;
+    font-size: 25px;
 }
 
 .card-title a {
@@ -801,7 +816,6 @@ footer a:hover {
 
 .card-title a:hover {
     color: #64ffda;
-    text-decoration: underline;
 }
 
 .card:hover {
