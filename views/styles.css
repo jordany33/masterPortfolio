@@ -760,7 +760,7 @@ footer a:hover {
 .skills-content {
     text-align: left;
     /* Aligns the paragraph text to the left */
-    max-width: 60%;
+    max-width: 87%;
     /* Limit the width to 75% of the parent's width */
     margin-top: 15px;
     /* Add top margin to create more space */
@@ -776,7 +776,6 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat( 3, 1fr );
     gap: 10px;
-    outline: #64ffda 5px solid;
 }
 
 .card {
@@ -784,7 +783,7 @@ footer a:hover {
     margin: 15px;
     padding: 15px;
     background-color: #252525;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     text-align: left; /* Ensures the text inside the card is left-aligned */
 }
 
@@ -819,14 +818,8 @@ footer a:hover {
 .card:hover {
     transform: scale(1.1);
     cursor: pointer;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
-
-
 
 #experience h1 {
     font-size: 32px;
@@ -842,6 +835,12 @@ footer a:hover {
 #experience .company {
     font-size: 22px;
     margin-bottom: -30px;
+    color: #ccd6f6;
+}
+
+#experience .company span {
+    font-size: 22px;
+    margin-bottom: -30px;
     color: #64ffda;
 }
 
@@ -853,7 +852,6 @@ footer a:hover {
 .timeline-content .experience-description {
     display: block;
     margin-bottom: 20px;
-    /* Adjust this value as needed */
 }
 
 .container-experience {
@@ -1093,7 +1091,7 @@ button {
 }
 
 .circle-effect {
-    --r: 10px;
+    --r: 8px;
     /* control the small circles radius and the main size */
     --f: 1.7;
     /* control the scale factor, between 1.5 and 2 you get nice result */
@@ -1128,3 +1126,58 @@ button {
     }   
 }
 
+.skillbar, .skillbar-title, .skill-bar-percent {
+    font-family: 'DM Sans', sans-serif;
+}
+
+  .skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .skillbar-bar:before {
+    background: #111;
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .skillbar-bar {
+    height: 3px;
+    width: 0px;
+    background: #ccd6f6;
+    transition-property: width, background-color;
+  }
+  
+  .skillbar-title {
+    color: #8892b0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  
+  .skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: #64ffda;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .wrapper {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+.green-highlight {
+    color: #64ffda; 
+}
