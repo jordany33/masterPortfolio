@@ -988,7 +988,7 @@ button {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #00ffc3c0;
+    background: #00ffc3b0;
     border-radius: 1.625rem;
   }
   button.learn-more .circle .icon {
@@ -1050,3 +1050,57 @@ button {
     text-align: center;
 }
 
+#projects {
+    text-align: center;
+}
+
+/* number of small circles */
+@property --a {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: true;
+}
+
+@property --i {
+    syntax: "<length>";
+    initial-value: 0px;
+    inherits: true;
+}
+
+.circle-effect {
+    --r: 10px;
+    /* control the small circles radius and the main size */
+    --f: 1.7;
+    /* control the scale factor, between 1.5 and 2 you get nice result */
+    --c: #ccd6f6;
+    width: calc(var(--r)*(1 + 1/tan(180deg/15)));
+    aspect-ratio: 1;
+    border-radius: 50%;
+    --_g:/var(--r) var(--r) radial-gradient(var(--c) 70%,#0000 72%) no-repeat;
+    --_d: 50% + (50% - var(--i,0px));
+    --_m:
+      radial-gradient(var(--c) calc(72% - var(--r)/2),#0000 0) no-repeat
+       50%/calc(100% - var(--i,0px)) calc(100% - var(--i,0px)),
+      /* ... rest of the values ... */
+    -webkit-mask: linear-gradient(#000 0 0) top/100% 50% no-repeat, var(--_m);
+    background: var(--_m);
+    --_a: rotate linear infinite;
+    animation: var(--_a) 4s, var(--_a) 16s reverse;
+    animation-composition: add;
+    cursor: pointer;
+    transition: --i 0.4s, scale 0.4s;
+}
+
+.circle-effect:hover {
+    --i: calc(var(--r)/var(--f));
+    scale: calc((1 + 1/tan(180deg/15))/(1 - var(--f) + 1/tan(180deg/15)));
+    animation-play-state: running, paused;
+}
+
+@keyframes rotate {
+    to {
+        --a:360deg;
+    }   
+}
+
+  
