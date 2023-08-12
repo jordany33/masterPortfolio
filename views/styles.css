@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -769,39 +770,51 @@ footer a:hover {
     line-height: 26px;
 }
 
-/* removed bullet points on ul */
-.card-deck ul {
-    list-style: none;
-}
 
-/* Adjust image sizing and pos */
-.card-deck img {
-    width: 50px;
-    margin: 20px;
-    /* margin-left: 270px; */
-}
+
 
 .card {
     transition: all 0.3s ease;
     margin: 15px;
-    background-color: #8892b0;
+    padding: 15px;
+    background-color: #252525;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Ensures the text inside the card is left-aligned */
+}
+
+.card-img-top {
+    width: 50px;
+    margin: 0 0 10px 0;
+    display: block; /* This ensures that the SVG takes the entire line */
 }
 
 .card-title {
-    position: absolute;
-    top: 75px;
-    right: 212px;
-    padding: -10px;
+    margin: 0;
+    color: #fff;
+    width: 100%;
+}
+
+.card-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: #64ffda;
+    text-decoration: underline;
 }
 
 .card:hover {
     transform: scale(1.1);
     cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.card-title:hover {
-    color: #64ffda;
-}
+
+
+
+
+
 
 #experience h1 {
     font-size: 32px;
@@ -1103,4 +1116,3 @@ button {
     }   
 }
 
-  
