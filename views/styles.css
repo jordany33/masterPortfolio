@@ -1059,7 +1059,7 @@ button {
 }
 
 .circle-effect {
-    --r: 9px;
+    --r: 8px;
     /* control the small circles radius and the main size */
     --f: 1.7;
     /* control the scale factor, between 1.5 and 2 you get nice result */
