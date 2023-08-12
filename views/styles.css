@@ -725,60 +725,31 @@ footer a:hover {
 #about {
     margin-top: 50px;
     padding-left: 60px;
-    /* Move content to the right by adding left padding */
 }
 
 #about .about-header {
     display: flex;
-    /* Aligns the title and the line horizontally */
     align-items: center;
-    /* Aligns the title and the line vertically */
 }
 
 #about h1 {
     font-size: 32px;
     margin-right: 10px;
-    /* Adds some space between the title and the line */
     margin-bottom: 10px;
-    /* Adds a bottom margin to the title */
     color: #ccd6f6;
 }
 
 .about-me-content {
     text-align: left;
-    /* Aligns the paragraph text to the left */
     max-width: 50%;
-    /* Limit the width to 75% of the parent's width */
     margin-top: 15px;
-    /* Add top margin to create more space */
     color: #8892b0;
     font-size: 18px;
-    /* Adjusted to match .title h1 span */
     line-height: 26px;
 }
 
-.skills-content {
-    text-align: left;
-    /* Aligns the paragraph text to the left */
-    max-width: 60%;
-    /* Limit the width to 75% of the parent's width */
-    margin-top: 15px;
-    /* Add top margin to create more space */
-    color: #8892b0;
-    font-size: 18px;
-    /* Adjusted to match .title h1 span */
-    line-height: 26px;
-}
-
-
-
-
-.card-deck
-{
-    display: grid;
-    grid-template-columns: repeat( 3, 1fr );
-    gap: 10px;
-    outline: #64ffda 5px solid;
+.green-highlight {
+    color: #64ffda; 
 }
 
 .card {
@@ -824,12 +795,6 @@ footer a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
-
-
 #experience h1 {
     font-size: 32px;
     color: #ccd6f6;
@@ -844,8 +809,13 @@ footer a:hover {
 #experience .company {
     font-size: 22px;
     margin-bottom: -30px;
-    color: #64ffda;
+    color: #ccd6f6;
 }
+
+#experience .company span {
+    font-size: 22px;
+    margin-bottom: -30px;
+    color: #64ffda;}
 
 .timeline-content ul li {
     font-size: 15px;
@@ -1095,7 +1065,7 @@ button {
 }
 
 .circle-effect {
-    --r: 10px;
+    --r: 8px;
     /* control the small circles radius and the main size */
     --f: 1.7;
     /* control the scale factor, between 1.5 and 2 you get nice result */
@@ -1129,4 +1099,55 @@ button {
         --a:360deg;
     }   
 }
+  
+.skillbar, .skillbar-title, .skill-bar-percent {
+    font-family: 'DM Sans', sans-serif;
+}
 
+  .skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .skillbar-bar:before {
+    background: #111;
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .skillbar-bar {
+    height: 3px;
+    width: 0px;
+    background: #ccd6f6;
+    transition-property: width, background-color;
+  }
+  
+  .skillbar-title {
+    color: #8892b0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  
+  .skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: #64ffda;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .wrapper {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
