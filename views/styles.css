@@ -96,15 +96,10 @@ header {
 }
 
 #projects {
-
-    margin-top: 200px
+    margin-top: 120px
 }
 
-#skills {
-    margin-top: 200px;
-}
-
-#resume {
+#contact {
     margin-top: 200px;
 }
 
@@ -131,10 +126,6 @@ header {
 
 .nav-item a[href="#resume"] {
     color: #64ffda !important;
-}
-
-#contact {
-    margin-top: 200px;
 }
 
 .nav-item a[href="/content"]:hover,
@@ -186,6 +177,21 @@ h1 {
     margin-bottom: 30px;
 }
 
+.green-highlight, a.green-highlight {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a.green-highlight:hover {
+    transform: translateY(-5px);
+    color: #ccd6f6;
+}
+
+.green-highlight {
+    color: #64ffda; 
+}
+
 .title h1 span {
     font-style: normal;
     font-weight: 600;
@@ -220,15 +226,17 @@ footer {
 }
 
 footer a {
-    color: inherit;  /* This ensures the link takes on the footer's color */
-    text-decoration: none;  /* Remove the default underline of links */
-    transition: color 0.3s ease;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 footer a:hover {
     color: #64ffda;
     cursor: pointer;
     text-decoration: none;
+    transform: translateY(-5px);
 }
 
 @keyframes blink {
@@ -723,7 +731,6 @@ footer a:hover {
 }
 
 #about {
-    margin-top: 50px;
     padding-left: 60px;
     /* Move content to the right by adding left padding */
 }
@@ -770,11 +777,9 @@ footer a:hover {
     line-height: 26px;
 }
 
-
-.card-deck
-{
+.card-deck {
     display: grid;
-    grid-template-columns: repeat( 3, 1fr );
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
@@ -783,42 +788,55 @@ footer a:hover {
     margin: 15px;
     padding: 15px;
     background-color: #252525;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Ensures the text inside the card is left-aligned */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-.card-body
-{
+.fa-regular.fa-folder {
+    font-size: 2.5em;        
+    color: #64ffda;       
+    padding: 20px;          
+    margin-bottom: -35px;
+    transition: color 0.3s ease; 
+}
+
+.card:hover i.fa-regular.fa-folder {
+    color: #ccd6f6 !important;
+}
+
+.card-body {
     margin: auto;
     padding: 20px;
-    /* outline: #64ffda 5px solid; */
-}
-
-.card-img-top {
-    width: 50px;
-    margin: 0 0 10px 0;
-    display: block; /* This ensures that the SVG takes the entire line */
+    font-size: 15px;
+    color: #8892b0;
 }
 
 .card-title {
-    color: #fff;
-    width: 100%;
-    font-size: 25px;
-}
-
-.card-title a {
-    color: #fff;
+    color: #ccd6f6;
     text-decoration: none;
+    transition: color 0.3s ease; 
+    font-size: 22px;
+    margin-bottom: -15px;
 }
 
-.card-title a:hover {
+.card:hover .card-title,
+.card:hover .languages {
     color: #64ffda;
 }
 
 .card:hover {
     transform: scale(1.1);
     cursor: pointer;
-    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.languages {
+    transition: color 0.3s ease; 
+    margin-top: 30px;
+    font-family: 'DM Sans', sans-serif;
+    color: #8892b0;
+    font-size: 14px;
+    word-spacing: 10px;
 }
 
 #experience h1 {
@@ -842,6 +860,13 @@ footer a:hover {
     font-size: 22px;
     margin-bottom: -30px;
     color: #64ffda;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+#experience .company:hover span {
+    transform: translateY(-5px);
+    color: #ccd6f6;
 }
 
 .timeline-content ul li {
@@ -910,12 +935,10 @@ footer a:hover {
     color: #8892b0;
 }
 
-#projects h1 {
+.project-title {
     font-size: 32px;
     margin-right: 10px;
-    /* Adds some space between the title and the line */
     margin-bottom: 10px;
-    /* Adds a bottom margin to the title */
     color: #ccd6f6;
 }
 
@@ -980,7 +1003,7 @@ footer a:hover {
 }
 
 .skills-section {
-    margin-top: 200px;
+    margin-top: 250px;
     padding-left: 200px;
     /* Adjust this value as needed */
     box-sizing: border-box;
@@ -1129,54 +1152,64 @@ button {
     font-family: 'DM Sans', sans-serif;
 }
 
-  .skillbar {
+.skillbar {
     position: relative;
     display: block;
     width: 100%;
     margin-bottom: 30px;
-  }
-  
-  .skillbar-bar:before {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillbar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skillbar:hover .skillbar-title {
+    color: #64ffda;
+}
+
+.skillbar:hover .skill-bar-percent {
+    color: #ccd6f6;
+}
+
+.skillbar-bar:before {
     background: #111;
     content: "";
     height: 3px;
     position: absolute;
     width: 100%;
     z-index: -1;
-  }
-  
-  .skillbar-bar {
+}
+
+.skillbar-bar {
     height: 3px;
     width: 0px;
     background: #ccd6f6;
     transition-property: width, background-color;
-  }
-  
-  .skillbar-title {
+}
+
+.skillbar-title {
     color: #8892b0;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
-  }
-  
-  .skill-bar-percent {
+}
+
+.skill-bar-percent {
     float: right;
     display: inline-block;
     color: #64ffda;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-  }
-  
-  .wrapper {
+}
+
+.wrapper {
     position: absolute;
     width: 80%;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-  }
-
-.green-highlight {
-    color: #64ffda; 
 }
