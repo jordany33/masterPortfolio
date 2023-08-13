@@ -106,8 +106,9 @@ header {
 .btn.resume-button {
     font-family: 'DM Sans', sans-serif;
     color: #64ffda;
-    border: 2px solid #64ffda; 
-    border-radius: 5px; /* Adjust the border-radius if needed */
+    border: 2px solid #64ffda;
+    border-radius: 5px;
+    /* Adjust the border-radius if needed */
     transition: transform 0.5s, box-shadow 0.5s;
     /* Add this line */
     font-size: 15px;
@@ -121,7 +122,8 @@ header {
 .btn.resume-button:focus {
     outline: none;
     box-shadow: none;
-    border-color: #64ffda; /* Set this to your button's normal state border color */
+    border-color: #64ffda;
+    /* Set this to your button's normal state border color */
 }
 
 .nav-item a[href="#resume"] {
@@ -157,7 +159,7 @@ h1 {
     /* Color for "Jordan Yee" */
     margin-bottom: 5px;
     word-spacing: 2px;
-    /* adjust as needed */ 
+    /* adjust as needed */
 }
 
 .title .header {
@@ -177,7 +179,8 @@ h1 {
     margin-bottom: 30px;
 }
 
-.green-highlight, a.green-highlight {
+.green-highlight,
+a.green-highlight {
     text-decoration: none;
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -189,7 +192,7 @@ a.green-highlight:hover {
 }
 
 .green-highlight {
-    color: #64ffda; 
+    color: #64ffda;
 }
 
 .title h1 span {
@@ -779,7 +782,7 @@ footer a:hover {
 
 .card-deck {
     display: grid;
-    grid-template-columns: repeat( 3, 1fr );
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
@@ -793,11 +796,11 @@ footer a:hover {
 }
 
 .fa-regular.fa-folder {
-    font-size: 2.5em;        
-    color: #64ffda;       
-    padding: 20px;          
+    font-size: 2.5em;
+    color: #64ffda;
+    padding: 20px;
     margin-bottom: -35px;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 .card:hover i.fa-regular.fa-folder {
@@ -814,7 +817,7 @@ footer a:hover {
 .card-title {
     color: #ccd6f6;
     text-decoration: none;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
     font-size: 22px;
     margin-bottom: -15px;
 }
@@ -831,7 +834,7 @@ footer a:hover {
 }
 
 .languages {
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
     margin-top: 30px;
     font-family: 'DM Sans', sans-serif;
     color: #8892b0;
@@ -944,9 +947,12 @@ footer a:hover {
 
 #contact {
     display: flex;
-    flex-direction: column; /* Children remain stacked vertically */
-    justify-content: center; /* Centers the items vertically */
-    align-items: center; /* Centers the items horizontally */
+    flex-direction: column;
+    /* Children remain stacked vertically */
+    justify-content: center;
+    /* Centers the items vertically */
+    align-items: center;
+    /* Centers the items horizontally */
 }
 
 .contact-title {
@@ -984,11 +990,14 @@ footer a:hover {
 .contact-button {
     font-family: 'DM Sans', sans-serif;
     color: #64ffda;
-    border: 2px solid #64ffda; /* Adjust the border width if needed */
-    border-radius: 5px; /* Adjust the border-radius if needed */
+    border: 2px solid #64ffda;
+    /* Adjust the border width if needed */
+    border-radius: 5px;
+    /* Adjust the border-radius if needed */
     transition: transform 0.5s, box-shadow 0.5s;
     font-size: 16px;
-    padding: 10px 20px; /* Add padding for better appearance */
+    padding: 10px 20px;
+    /* Add padding for better appearance */
 }
 
 .contact-button:hover {
@@ -999,7 +1008,8 @@ footer a:hover {
 .contact-button:focus {
     outline: none;
     box-shadow: none;
-    border-color: #64ffda; /* Set this to your button's normal state border color */
+    border-color: #64ffda;
+    /* Set this to your button's normal state border color */
 }
 
 .skills-section {
@@ -1021,12 +1031,14 @@ button {
     padding: 0;
     font-size: inherit;
     font-family: 'DM Sans', sans-serif;
-  }
-  button.learn-more {
+}
+
+button.learn-more {
     width: 12rem;
     height: auto;
-  }
-  button.learn-more .circle {
+}
+
+button.learn-more .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
@@ -1035,23 +1047,26 @@ button {
     height: 3rem;
     background: #00ffc3b0;
     border-radius: 1.625rem;
-  }
-  button.learn-more .circle .icon {
+}
+
+button.learn-more .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
     background: #ccd6f6;
-  }
-  button.learn-more .circle .icon.arrow {
+}
+
+button.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
     height: 0.125rem;
     background: none;
-  }
-  button.learn-more .circle .icon.arrow::before {
+}
+
+button.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "";
     top: -0.25rem;
@@ -1061,8 +1076,9 @@ button {
     border-top: 0.125rem solid #ccd6f6;
     border-right: 0.125rem solid #ccd6f6;
     transform: rotate(45deg);
-  }
-  button.learn-more .button-text {
+}
+
+button.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -1076,20 +1092,24 @@ button {
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
-  }
-  button:hover .circle {
+}
+
+button:hover .circle {
     width: 100%;
-  }
-  button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
     background: #ccd6f6;
     transform: translate(1rem, 0);
-  }
-  button:hover .button-text {
+}
+
+button:hover .button-text {
     color: #171717;
-  }
-  button:focus {
+}
+
+button:focus {
     outline: none;
-  }
+}
 
 #projects {
     text-align: center;
@@ -1121,13 +1141,12 @@ button {
     width: calc(var(--r)*(1 + 1/tan(180deg/15)));
     aspect-ratio: 1;
     border-radius: 50%;
-    --_g:/var(--r) var(--r) radial-gradient(var(--c) 70%,#0000 72%) no-repeat;
-    --_d: 50% + (50% - var(--i,0px));
+    --_g: /var(--r) var(--r) radial-gradient(var(--c) 70%, #0000 72%) no-repeat;
+    --_d: 50% + (50% - var(--i, 0px));
     --_m:
-      radial-gradient(var(--c) calc(72% - var(--r)/2),#0000 0) no-repeat
-       50%/calc(100% - var(--i,0px)) calc(100% - var(--i,0px)),
-      /* ... rest of the values ... */
-    -webkit-mask: linear-gradient(#000 0 0) top/100% 50% no-repeat, var(--_m);
+        radial-gradient(var(--c) calc(72% - var(--r)/2), #0000 0) no-repeat 50%/calc(100% - var(--i, 0px)) calc(100% - var(--i, 0px)),
+        /* ... rest of the values ... */
+        -webkit-mask: linear-gradient(#000 0 0) top/100% 50% no-repeat, var(--_m);
     background: var(--_m);
     --_a: rotate linear infinite;
     animation: var(--_a) 4s, var(--_a) 16s reverse;
@@ -1144,11 +1163,13 @@ button {
 
 @keyframes rotate {
     to {
-        --a:360deg;
-    }   
+        --a: 360deg;
+    }
 }
 
-.skillbar, .skillbar-title, .skill-bar-percent {
+.skillbar,
+.skillbar-title,
+.skill-bar-percent {
     font-family: 'DM Sans', sans-serif;
 }
 
