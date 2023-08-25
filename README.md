@@ -24,7 +24,7 @@ npm install
 npm start
 \```
 
-Your website should now be running on `http://localhost:1200` or the port specified in your `server.js`.
+Your website should now run on `http://localhost:1200` or the port specified in your `server.js`.
 
 ## Customization
 
